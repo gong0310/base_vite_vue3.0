@@ -25,7 +25,7 @@ const vMove: Directive = {
     console.log("vMode beforeMount 指令绑定到元素后调用 只调用一次");
   },
   mounted(el: HTMLElement, dir: DirectiveBinding<Dir>) {
-    console.log("vMode mounted 元素插入父级dom调用",el);
+    console.log("vMode mounted 元素插入父级dom调用",el,dir);
     el.style.color = dir.value.color;
   },
   beforeUpdate() {
