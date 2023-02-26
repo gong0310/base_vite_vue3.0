@@ -22,7 +22,8 @@ const PropsData = defineProps<Props>();
 const emit = defineEmits(["update:modelValue", "update:title"]);
 
 const changeInput = (e: any) => {
-  console.log(PropsData.modelModifiers); // modelModifiers 配置了就是true。{xiaoman: true}
+  console.log('modelModifiers',PropsData.modelModifiers); // modelModifiers 配置了就是true。{xiaoman: true}
+  console.log('titleModifiers',PropsData.titleModifiers); // modelModifiers 配置了就是true。{xiaoman: true}
 
   emit("update:modelValue", e.target.value);
   emit("update:title", e.target.value + "title");
