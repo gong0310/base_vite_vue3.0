@@ -1,0 +1,30 @@
+gong0310   gzb2748369841
+
+
+git init
+git add .
+git commit -m "第一次"
+git status
+git remote add origin https://
+git push -u origin master
+git push -f
+git push --set-upstream origin master
+出现问题 ： git pull --rebase origin master
+git clone http://  下载整个仓库
+git pull http://  下载分支
+git log 查看版本号
+git reset --hard HEAD^  回退
+
+rm -f 1.txt  删除本地文件
+git rm 1.txt   删除github上文件
+git config --list   查看账号密码信息
+
+
+git branch -a 查看所有的分支
+git branch -r 查看远程所有分支
+git branch 分支名    新建一个分支
+git checkout -b 分支名   新建一个分支，并切换到该分支
+git checkout [branch-name] 切换到指定分支
+git checkout -  切换到上一个分支
+git branch -d 分支名    删除分支
+git merge 分支名 合并分支
