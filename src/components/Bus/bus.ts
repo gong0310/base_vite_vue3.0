@@ -32,5 +32,10 @@ class Bus implements BusClass {
     this.list[name] = fn;
     console.log("222", this.list);
   }
+  off (name: string) {
+    if(name){
+      delete this.list[name]
+    }
+  }
 }
 export default new Bus();
